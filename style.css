@@ -1,0 +1,129 @@
+body{
+    font-family:  Georgia, Times, 'Times New Roman', serif;
+}
+h1{
+    text-align: center;
+}
+h2{
+    margin-left: 10%;
+}
+h3{
+    margin-left: 10%;
+}
+form{
+    margin-left: 2%;
+}
+#inputTitleGet{
+    width: 20%;
+    margin-bottom: 2%;
+}
+section{
+    display: flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: black;
+    justify-content: space-around;
+}
+/*
+.synopsisCard{
+    overflow-y: scroll;
+}*/
+.stylecard{
+    box-shadow: 10px 5px 5px rgb(90, 89, 89);
+    margin-top: 10px;
+    overflow:hidden; 
+    line-height: 7px;
+    
+}
+
+.stylecard:hover{
+    transform: scale(2.5);
+    z-index: 1;
+    position: relative;
+  top: 140px;
+   /* bottom: 100px;*/
+   position: fixed;
+  
+    align-items: center;
+}
+
+.stylecard:hover .imageCard{
+    position: absolute;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    overflow:hidden;
+
+}
+
+.stylecard:hover .card-text{
+    visibility: visible;
+    position: relative;
+    font-size: 8px;
+    
+    
+}
+
+h5{
+    font-weight: bold;
+}
+
+.card-text{
+visibility: hidden;
+position: absolute;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+   }
+    100% {
+        transform: translateX(calc(-250px * 7));
+   }
+}
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 225px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: rgb(255,255,255);
+  /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(244,231,5,0.7973390039609594) 100%, rgba(198,149,5,0.7133053905155813) 100%);*/
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(3,2,0,0.7973390039609594) 40%, rgba(3,2,0,1) 92%);
+}
+.slider::before, .slider::after {
+   /* */
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.slider::before {
+    left: 0;
+    top: 0;
+}
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(200px * 14);
+}
+.slider .slide {
+    height: 100%;
+    width: 100%;
+    background-image: url("bordure.png");
+}
+.imgSlide {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    margin-top: 33px;
+    margin-bottom: 35px;
+    height : 162px;
+    width : 252px;
+  }
