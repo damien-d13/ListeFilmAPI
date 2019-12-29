@@ -44,39 +44,7 @@ var key = "f0ef874aeddb558f345d527f77cd29e2";
             inputTitleGet.placeholder = "Titre du film";
             inputTitleGet.className = "form-control";
             divTitleGet.appendChild(inputTitleGet);
-/*
-    // Creat INPUT Years 
-        var divYearsGet = document.createElement("div");
-            divYearsGet.className = "from-group";
-            form.appendChild(divYearsGet);
 
-        var labelYearsGet = document.createElement("label");
-            labelYearsGet.textContent = "Année :";
-            divYearsGet.appendChild(labelYearsGet);
-
-        var inputYearsGet = document.createElement("input");
-            inputYearsGet.type = "text";
-            inputYearsGet.id = "inputYearsGet";
-            inputYearsGet.placeholder = "Année de sortie du film";
-            inputYearsGet.className = "form-control";
-            divYearsGet.appendChild(inputYearsGet);
-
-    // Creat INPUT ACTEUR
-        var divActorGet = document.createElement("div");
-            divActorGet.className = "from-group";
-            form.appendChild(divActorGet);
-
-        var labelActorGet = document.createElement("label");
-            labelActorGet.textContent = "Acteur :";
-            divActorGet.appendChild(labelActorGet);
-
-        var inputActorGet = document.createElement("input");
-            inputActorGet.type = "text";
-            inputActorGet.id = "inputActorGet";
-            inputActorGet.placeholder = "Acteur du film";
-            inputActorGet.className = "form-control";
-            divActorGet.appendChild(inputActorGet);
-*/
     // Creat BUTTON 
         var btnGet = document.createElement("button");
             btnGet.textContent = "Envoyer";
